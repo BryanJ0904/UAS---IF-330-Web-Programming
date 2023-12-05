@@ -1,0 +1,50 @@
+.atas
+{
+    padding: 10px 60px;
+    background-color: #87C4FF;
+}
+
+.atas a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    margin: 0px 25px;
+}
+
+.navbar-nav .nav-link:hover 
+{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.loginbtn
+{
+    background-color: #39A7FF;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.loginbtn:hover 
+{
+    background-color: #2d9ffb;
+}
+
+.footer {
+    background-color: #87C4FF;
+    color: #fff;
+    padding: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo
+{
+    font-size: 30px;
+}

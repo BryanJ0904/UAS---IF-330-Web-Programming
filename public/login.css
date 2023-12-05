@@ -1,0 +1,69 @@
+.login {
+    background-color: #87C4FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .cardlogin {
+    background-color: #216FAD;
+    width: 400px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .cardkonten {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .welcome {
+    color: white;
+    font-size: 36px; 
+    margin-bottom: 20px;
+  }
+  
+  .kotak {
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px 15px;
+    background-color: #39A7FF;
+    width: 100%; 
+    margin-bottom: 15px;
+  }
+  
+  .btnsubmit {
+    width: 200px; 
+    margin-top: 30px; 
+    margin-bottom: 20px; 
+    color: white;
+    font-size: 18px;
+    background-color: #39A7FF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .login:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+  }
+  
+  .cardlogin:hover {
+    transform: scale(1.05);
+  }
+  

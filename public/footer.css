@@ -1,0 +1,35 @@
+#selesai {
+    background-color: #87C4FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#footer-logo {
+    margin-top: 100px;
+    padding: 30px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.footer-section {
+    padding: 30px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#pt p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    #selesai {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        flex: 1;
+    }
+}
