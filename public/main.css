@@ -1,14 +1,17 @@
 .atas
 {
+    display: flex;
+    justify-content: space-between;
     padding: 10px 60px;
     background-color: #87C4FF;
+    border: 2px solid black;
 }
 
 .atas a
 {
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 25px;
+    font-size: 18px;
     margin: 0px 25px;
 }
 
@@ -46,5 +49,14 @@
 
 .logo
 {
-    font-size: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.tes{
+    border: 2px solid black;
+}
+
+.navbox{
+    width: 30%;
 }
