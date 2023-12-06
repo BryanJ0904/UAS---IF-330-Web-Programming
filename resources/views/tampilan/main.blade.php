@@ -11,12 +11,10 @@
 
 <body>
     <div class="rows atas">
-        <div class="col-3 tes">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="/"><img class="logo" src="images/logo.png"/></a>
-            </nav>
+        <div class="d-flex align-items-center col-6 col-lg-2 tes">
+            <img class="logo" src="images/logo.png"/>
         </div>
-        <div class="col-7 tes">
+        <div class="col-4 col-lg-8 tes">
             <nav class="navbar navbar-expand-lg">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
@@ -33,11 +31,24 @@
                 </div>
             </nav>
         </div>
-        <div class="col-2 tes">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a href="login">
-                    <button class="loginbtn">LOGIN</button>
-                </a>
+        <div class="col-2 d-flex justify-content-center align-items-center tes">
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a href="login">
+                        <button class="loginbtn">LOGIN</button>
+                    </a>
+                </div>
+            </nav>
+            <div class="dropdown d-lg-none">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
             </div>
         </div>
     </div>
