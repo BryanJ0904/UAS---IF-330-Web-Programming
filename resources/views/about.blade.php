@@ -81,15 +81,15 @@
     <section class="aboutus d-flex align-items-center">
     <div class="container">
   <div class="row">
-    <div class="col-sm">
+    <div class="col-sm" data-aos="fade-up">
       <h1>VISI</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio architecto impedit ipsum error, veritatis fugiat aliquam suscipit consequuntur voluptas. Dignissimos quidem temporibus fuga sequi beatae quo dolore tempora quia debitis!</p>
     </div>
-    <div class="col-sm">
+    <div class="col-sm" data-aos="fade-up">
       <h1>MISI</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, ea maiores assumenda cum corporis optio voluptate, culpa cupiditate rem vitae id qui tenetur commodi quaerat, unde recusandae totam numquam reprehenderit.</p>
     </div>
-    <div class="col-sm">
+    <div class="col-sm" data-aos="fade-up">
       <h1>PARTNER</h1>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus rerum quod dolorum unde quos molestiae odit pariatur esse quaerat exercitationem doloremque sapiente soluta aperiam eius labore ipsam, nostrum necessitatibus ea!</p>
     </div>
