@@ -74,6 +74,7 @@
           </div>
           <div class="swiper product-swiper">
             <div class="swiper-wrapper">
+              <!-- Pemisah -->
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
@@ -179,101 +180,31 @@
           <div class="display-header d-flex justify-content-between pb-3">
             <h2 class="display-7 text-dark text-uppercase">Produk Kami</h2>
             <div class="btn-right">
-              <a href="produk" class="btn btn-medium btn-normal text-uppercase">LIHAT LEBIH BANYAK</a>
+              <a href="/produk" class="btn btn-medium btn-normal text-uppercase">LIHAT LEBIH BANYAK</a>
             </div>
           </div>
           <div class="swiper product-watch-swiper">
             <div class="swiper-wrapper">
+              <!-- Pemisah -->
+              @foreach($produk as $produk)
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item6.jpg" alt="product-item" class="img-fluid">
+                    <img src="{{ asset('storage/'.$produk->gambar) }}" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
+                      <a href="{{ route('detail.produk', ['id' => $produk->id]) }}" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
                     </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="#">Pink watch</a>
+                      <a href="#">{{ $produk->part_name }}</a>
                     </h3>
-                    <span class="item-price text-primary">$870</span>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item7.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">Heavy watch</a>
-                    </h3>
-                    <span class="item-price text-primary">$680</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item8.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">spotted watch</a>
-                    </h3>
-                    <span class="item-price text-primary">$750</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item9.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">black watch</a>
-                    </h3>
-                    <span class="item-price text-primary">$650</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item10.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">black watch</a>
-                    </h3>
-                    <span class="item-price text-primary">$750</span>
-                  </div>
-                </div>
-              </div>
+              @endforeach
             </div>
           </div>
         </div>

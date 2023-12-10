@@ -11,7 +11,7 @@ class ProdukCtr extends Controller
     {
         $produk = DatabaseProduk::all();
 
-        return view('produk', compact('produk'));
+        return view('index', compact('produk'));
     }
 
     public function showAll()

@@ -17,10 +17,6 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
 route::get('/login', function () {
     return view('login');
 });
@@ -41,11 +37,10 @@ route::get('/kontak', function (){
     return view('kontak');
 });
 
+Route::get('/', [ProdukCtr::class, 'index'])->name('produk');
 
 Route::get('/kontak', [ContactController::class, 'showForm'])->name('kontak.form');
 Route::post('/kontak', [ContactController::class, 'sendEmail'])->name('kontak.send');
-
-
 
 //buat login sama logout mas bro
 Route::post('/login', [LoginCtr::class, 'login']);
