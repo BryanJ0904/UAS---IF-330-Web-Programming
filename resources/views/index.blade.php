@@ -269,8 +269,6 @@
     @include('tampilan.footer')
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('vendor/jquery-sticky/jquery.sticky.js') }}"></script>
     <script src="{{ asset('vendor/waypoints/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('vendor/counterup/counterup.min.js') }}"></script>

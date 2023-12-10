@@ -1,5 +1,3 @@
-@include('tampilan.main')
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +29,7 @@
   </style>
 </head>
 <body>
+@include('tampilan.main')
   <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
