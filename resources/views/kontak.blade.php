@@ -1,5 +1,3 @@
-@include('tampilan.main')
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/kontak.css') }}" />
 </head>
 <body>
+    @include('tampilan.main')
     <div class="kontak-container">
         @if(session('success'))
             <div class="alert alert-success">
