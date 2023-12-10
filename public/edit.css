@@ -1,0 +1,33 @@
+.DataForm {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.btnsubmit {
+    width: 200px; 
+    margin-bottom: 20px;
+    margin-left: 280px;
+    color: white;
+    font-size: 18px;
+    background-color: #39A7FF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+
+.buttonbalik {
+    display: inline-block;
+    text-align: center;
+    margin-left: 770px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 5px;
+}
