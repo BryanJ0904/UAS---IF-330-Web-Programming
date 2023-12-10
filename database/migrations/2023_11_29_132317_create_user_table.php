@@ -18,6 +18,16 @@ return new class extends Migration
             $table->string('password');
             $table->string('role');
         });
+
+        $data = [
+            [
+                'username' => 'Admin',
+                'password' => 'admin',
+                'role' => 'admin',
+            ],
+        ];
+
+        DB::table('user')->insert($data);
     }
 
     /**
