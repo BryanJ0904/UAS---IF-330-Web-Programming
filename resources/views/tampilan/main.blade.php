@@ -32,6 +32,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/about"><b>Tentang Kami</b></a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/kontak"><b>Kontak</b></a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -46,6 +49,7 @@
                     <a class="dropdown-item text-dark d-lg-none" href="/">Beranda</a>
                     <a class="dropdown-item text-dark d-lg-none" href="/produk">Produk</a>
                     <a class="dropdown-item text-dark d-lg-none" href="/about">Tentang Kami</a>
+                    <a class="dropdown-item text-dark d-lg-none" href="/kontak">Kontak</a>
                     <a class="dropdown-item text-dark" href="{{ url('/logout') }}">Logout</a>
                     <a class="dropdown-item text-dark" href="{{ url('/crud') }}">CRUD</a>
                 </div>
@@ -76,6 +80,7 @@
                     <a class="dropdown-item text-dark" href="/">Beranda</a>
                     <a class="dropdown-item text-dark" href="/produk">Produk</a>
                     <a class="dropdown-item text-dark" href="/about">Tentang Kami</a>
+                    <a class="dropdown-item text-dark d-lg-none" href="/kontak">Kontak</a>
                     <a class="dropdown-item text-dark" href="/login">Login/Register</a>
                 </div>
             </div>
