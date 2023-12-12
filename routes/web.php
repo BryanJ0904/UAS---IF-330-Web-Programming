@@ -46,6 +46,8 @@ Route::post('/kontak', [ContactController::class, 'sendEmail'])->name('kontak.se
 Route::post('/login', [LoginCtr::class, 'login']);
 Route::get('/logout', [LoginCtr::class, 'logout']);
 
+Route::post('/register', [LoginCtr::class, 'register']);
+
 
 // ini buat produk
 Route::get('/produk/{id}', [ProdukCtr::class, 'showDetail'])->name('detail.produk');

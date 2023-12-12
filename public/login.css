@@ -1,5 +1,8 @@
+.body{
+  background-color: #39A7FF;
+}
+
 .login {
-    background-color: #39A7FF;
     display: flex;
     justify-content: center;
     align-items: center;
