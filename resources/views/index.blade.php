@@ -75,96 +75,25 @@
           <div class="swiper product-swiper">
             <div class="swiper-wrapper">
               <!-- Pemisah -->
+              @foreach($mesin as $mesin)
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item1.jpg" alt="product-item" class="img-fluid">
+                    <img src="{{ asset('storage/'.$mesin->gambar) }}" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
+                      <a href="{{ route('detail.produk', ['id' => $mesin->id]) }}" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
                     </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="#">Iphone 10</a>
+                      <a href="#">{{ $mesin->part_name }}</a>
                     </h3>
-                    <span class="item-price">$980</span>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item2.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">Iphone 11</a>
-                    </h3>
-                    <span class="item-price">$1100</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item3.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">Iphone 8</a>
-                    </h3>
-                    <span class="item-price">$780</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item4.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">Iphone 13</a>
-                    </h3>
-                    <span class="item-price">$1500</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item5.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">Iphone 12</a>
-                    </h3>
-                    <span class="item-price">$1300</span>
-                  </div>
-                </div>
-              </div>
+              @endforeach 
             </div>
           </div>
         </div>
@@ -248,14 +177,14 @@
             <p>2015 To Today</p>
             <p>PT ini bergerak di bidang percetakan sparepart motor dan mobil, sparepart pesanan dari konsumen PT lain, untuk motor HONDA KAWASAKI untuk mobil tergantung pesanan</p>
                 
-            <div class="btnabout">
+            <div class="text-center">
               <a href="about">
-                 <button class="btnatas">Tentang Kami</button>
+                 <button>Tentang Kami</button>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-lg-7 col-md-6 px-0">
+        <div class="col-lg-7 col-md-6 px-0 mt-3">
           <div class="map_container">
             <div class="map">
               <div id="googleMap"></div>

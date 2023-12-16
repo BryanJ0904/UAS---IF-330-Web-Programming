@@ -37,10 +37,8 @@ tr:nth-child(odd) {
 }
 
 .btnsubmit {
-    width: 200px; 
-    margin-top: 20px; 
-    margin-bottom: 20px;
-    margin-left: 280px;
+    width: 200px;
+    height: 50px;
     color: white;
     font-size: 18px;
     background-color: #39A7FF;
@@ -51,5 +49,9 @@ tr:nth-child(odd) {
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
+  }
+
+  .btncontainer{
+    min-height: 150px;
   }
 
