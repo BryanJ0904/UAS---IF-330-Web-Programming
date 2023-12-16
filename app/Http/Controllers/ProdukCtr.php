@@ -4,14 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\DatabaseProduk;
+use App\Models\DatabaseMesin;
 
 class ProdukCtr extends Controller
 {
     public function index()
     {
         $produk = DatabaseProduk::all();
+        $mesin = DatabaseMesin::all();
 
-        return view('index', compact('produk'));
+        return view('index', compact('produk', 'mesin'));
     }
 
     public function showAll()

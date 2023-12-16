@@ -19,7 +19,10 @@
             <input type="text" name="part_name" required class="form-control">
             <label for="deskripsi">Deskripsi:</label>
             <textarea name="deskripsi" required class="form-control"></textarea>
-            <button type="submit" class="btn btn-primary btnsubmit">Tambah Data</button>
+            <div class="d-flex mt-3 flex-column flex-md-row justify-content-around btncontainer">
+                <button type="submit" class="text-center btn btn-primary btnsubmit" name="action" value="tambah_produk">Tambah Produk</button>
+                <button type="submit" class="text-center btn btn-primary btnsubmit" name="action" value="tambah_mesin">Tambah Mesin</button>
+            </div> 
         </form>
 
         @if(session('success'))
@@ -34,6 +37,7 @@
             </div>
         @endif
 
+        <h1 class="text-center">Tabel Produk</h1>
         <table class="TableData">
             <thead>
                 <tr>
@@ -45,21 +49,47 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($data as $item)
+                @foreach($data1 as $item)
                     <tr>
                         <td><img src="{{ asset('storage/'.$item->gambar) }}" alt="Product Image"></td>
                         <td>{{ $item->part_no }}</td>
                         <td>{{ $item->part_name }}</td>
                         <td>{{ $item->deskripsi }}</td>
                         <td>
-                            <a href="{{ url('/edit-form/'.$item->id) }}" class="btn btn-warning">Edit</a>
-                            <a href="{{ url('/delete-data/'.$item->id) }}" class="btn btn-danger">Hapus</a>
+                            <a href="{{ url('/edit-produk/'.$item->id) }}" class="btn btn-warning">Edit</a>
+                            <a href="{{ url('/delete-produk/'.$item->id) }}" class="btn btn-danger">Hapus</a>
                         </td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
 
+        <h1 class="text-center">Tabel Mesin</h1>
+        <table class="TableData">
+            <thead>
+                <tr>
+                    <th>Gambar</th>
+                    <th>Part No</th>
+                    <th>Part Name</th>
+                    <th>Deskripsi</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($data2 as $item)
+                    <tr>
+                        <td><img src="{{ asset('storage/'.$item->gambar) }}" alt="Product Image"></td>
+                        <td>{{ $item->part_no }}</td>
+                        <td>{{ $item->part_name }}</td>
+                        <td>{{ $item->deskripsi }}</td>
+                        <td>
+                            <a href="{{ url('/edit-mesin/'.$item->id) }}" class="btn btn-warning">Edit</a>
+                            <a href="{{ url('/delete-mesin/'.$item->id) }}" class="btn btn-danger">Hapus</a>
+                        </td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
     </div>
     @include('tampilan.footer')
 </body>

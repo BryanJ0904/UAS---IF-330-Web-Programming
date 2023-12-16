@@ -18,7 +18,25 @@ return new class extends Migration
             $table->string('gambar');
             $table->string('part_no');
             $table->string('part_name');
+            $table->text('deskripsi');
         });
+
+        // $data = [
+        //     [
+        //         'gambar' => 'produk/r1gAyL7MZEyL7D9qPfw8OjJiUYDLKBMqfMiIaceG.jpg',
+        //         'part_no' => '02',
+        //         'part_name' => 'Stay FR Cover',
+        //         'deskripsi' => 'Digunakan Untuk Motor Honda.',
+        //     ],
+        //     [
+        //         'gambar' => 'produk/5shdtgLfq58yPXcl6Mot3w425rNGsy0QmI45zuIb.jpg',
+        //         'part_no' => '03',
+        //         'part_name' => 'Stay IGN Coil',
+        //         'deskripsi' => 'Digunakan Untuk Motor Honda.',
+        //     ],
+        // ];
+
+        // DB::table('mesin')->insert($data);
     }
 
     /**

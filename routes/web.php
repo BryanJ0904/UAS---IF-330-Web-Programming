@@ -57,6 +57,9 @@ Route::get('/produk', [ProdukCtr::class, 'showAll'])->name('produk');
 //buat crud data :v
 Route::get('/crud', [CrudController::class, 'index']);
 Route::post('/add-data', [CrudController::class, 'addData']);
-Route::get('/delete-data/{id}', [CrudController::class, 'deleteData']);
-Route::get('/edit-form/{id}', [CrudController::class, 'editForm']);
-Route::post('/update-data/{id}', [CrudController::class, 'updateData']);
+Route::get('/delete-produk/{id}', [CrudController::class, 'deleteData'])->name('delete-produk');
+Route::get('/edit-produk/{id}', [CrudController::class, 'editForm'])->name('edit-produk');
+Route::post('/update-produk/{id}', [CrudController::class, 'updateData'])->name('update-produk');
+Route::get('/delete-mesin/{id}', [CrudController::class, 'deleteData'])->name('delete-mesin');
+Route::get('/edit-mesin/{id}', [CrudController::class, 'editForm'])->name('edit-mesin');
+Route::post('/update-mesin/{id}', [CrudController::class, 'updateData'])->name('update-mesin');

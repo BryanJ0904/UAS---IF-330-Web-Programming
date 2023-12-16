@@ -19,8 +19,11 @@
             {{ session('error') }}
         </div>
     @endif
-
-    <form action="{{ url('/update-data/'.$data->id) }}" method="post" enctype="multipart/form-data" class="DataForm">
+    @if($action === 'edit-produk')
+    <form action="{{ url('/update-produk/'.$data->id) }}" method="post" enctype="multipart/form-data" class="DataForm">
+    @elseif($action === 'edit-mesin')
+    <form action="{{ url('/update-mesin/'.$data->id) }}" method="post" enctype="multipart/form-data" class="DataForm">
+    @endif
         @csrf
         <label for="gambar">Gambar:</label>
         <input type="file" name="gambar" accept="image/*"  class="form-control">
