@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
+.body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #39A7FF;
 }
 
 .pproduk {

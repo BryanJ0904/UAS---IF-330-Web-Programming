@@ -59,13 +59,13 @@
           </div>
           <!--slide 3 -->
           <div class="carousel-item">
-            <div class="carousel-background"><img src="{{ asset('images\WhatsApp Image 2023-12-07 at 02.39.37 (1).jpeg') }}" alt="" style="width: 100%; height: 100vh"></div>
+            <div class="carousel-background"><img src="{{ asset('images/3.jpeg') }}" alt="" style="width: 100%; height: 100vh"></div>
             <div class="carousel-container">
             </div>
           </div>
           <!--slide 4 -->
           <div class="carousel-item">
-            <div class="carousel-background"><img src="{{ asset('images\WhatsApp Image 2023-12-07 at 02.39.37.jpeg') }}" alt="" style="width: 100%; height: 100vh"></div>
+            <div class="carousel-background"><img src="{{ asset('images/4.jpeg') }}" alt="" style="width: 100%; height: 100vh"></div>
             <div class="carousel-container">
             </div>
           </div>
@@ -85,9 +85,10 @@
 
   <section id="smart-watches" >
       <div class="container">
-       <h1 data-aos="fade-up">Sejarah Perusahaan kami</h1>
+       <h1 data-aos="fade-up">SEJARAH PERUSAHAAN KAMI</h1>
        <p data-aos="fade-up">2015 To Today</p>
        <p data-aos="fade-up">PT ini bergerak di bidang percetakan sparepart motor dan mobil, sparepart pesanan dari konsumen PT lain, untuk motor HONDA KAWASAKI untuk mobil tergantung pesanan.</p>
+       <p data-aos="fade-up">PT TRI DAYA LANGGENG bergerak dalam bidang pembuatan spare part kendaraan, alat-alat elektronik dan alat-alat rumah tangga serta peralatan lainnya, yang didirikan pada tahun 2015 oleh para praktisi yang berpengalaman dalam bidangnya masing-masing. Dengan didukung tenaga, mesin dan alat yang memadai kami yakin akan mampu memberikan layanan terbaik kepada setiap pelanggan kami. Juga dedikasi, kompetensi dan keinginan untuk terus maju dan berkembang dari kamiyang akan memberikan hasil terbaik demi kepuasan pelanggan kami</p>
       </div>
     </section>
 

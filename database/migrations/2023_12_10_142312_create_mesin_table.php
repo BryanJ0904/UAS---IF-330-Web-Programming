@@ -21,22 +21,37 @@ return new class extends Migration
             $table->text('deskripsi');
         });
 
-        // $data = [
-        //     [
-        //         'gambar' => 'produk/r1gAyL7MZEyL7D9qPfw8OjJiUYDLKBMqfMiIaceG.jpg',
-        //         'part_no' => '02',
-        //         'part_name' => 'Stay FR Cover',
-        //         'deskripsi' => 'Digunakan Untuk Motor Honda.',
-        //     ],
-        //     [
-        //         'gambar' => 'produk/5shdtgLfq58yPXcl6Mot3w425rNGsy0QmI45zuIb.jpg',
-        //         'part_no' => '03',
-        //         'part_name' => 'Stay IGN Coil',
-        //         'deskripsi' => 'Digunakan Untuk Motor Honda.',
-        //     ],
-        // ];
+        $data = [
+            [
+                'gambar' => 'mesin/1UZYHitTQrZ37iGwYQedtWiGN8zOc6Gw94par1ha.jpg',
+                'part_no' => '02',
+                'part_name' => 'Mesin Press',
+                'deskripsi' => '
+                Berat : 80 ton 
+                Merk : Simomura 
+                Digunakan : Mesin ini bisa digunakan untuk proses produksi, proses blank bending, dan pircing',
+            ],
+            [
+                'gambar' => 'mesin/RPqaSviYuMd0hmRr73hPvseoxbmwhz7nWAA0ahnJ.jpg',
+                'part_no' => '03',
+                'part_name' => 'Mesin Spot',
+                'deskripsi' => '.',
+            ],
+            [
+                'gambar' => 'mesin/g4hO9eijpLg0be6hpTtkDQ6yzb247zslmOO7thmV.jpg',
+                'part_no' => '04',
+                'part_name' => 'Mesin Miling',
+                'deskripsi' => '.',
+            ],
+            [
+                'gambar' => 'mesin/ewb4u4IrTlb9v8DcOpqrmHAjWtobWGVeHcIZzKWv.jpg',
+                'part_no' => '05',
+                'part_name' => 'Mesin Bubut',
+                'deskripsi' => '.',
+            ],
+        ];
 
-        // DB::table('mesin')->insert($data);
+        DB::table('mesin')->insert($data);
     }
 
     /**

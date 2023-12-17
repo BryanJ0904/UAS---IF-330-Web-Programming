@@ -6,7 +6,7 @@
     <title>Kontak Kami</title>
     <link rel="stylesheet" href="{{ asset('kontak.css') }}" />
 </head>
-<body>
+<body class="body">
     @include('tampilan.main')
     <div class="kontak-container">
         @if(session('success'))

@@ -6,7 +6,7 @@
     <title>Produk</title>
     <link rel="stylesheet" href="{{ asset('detail.css') }}" />
 </head>
-<body>
+<body class="body">
     @include('tampilan.main')
     <div class="detail-produk">
         <h1>Detail Produk</h1>
