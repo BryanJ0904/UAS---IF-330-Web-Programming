@@ -36,7 +36,7 @@
             <div class="carousel-background"><img src="{{ asset('images/1.jpeg') }}" alt="" style="width: 100%; height: 100vh"></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                <h2 class="animate__animated animate__fadeInDown">Selamat datang di website kami!</h2>
                 <div class="buttonatas">
                     <a href="produk" class="btn-get-started animate__animated animate__fadeInUp scrollto">Produk Kami</a>
                 </div>
@@ -48,9 +48,9 @@
             <div class="carousel-background"><img src="{{ asset('images/2.jpeg') }}" alt="" style="width: 100%; height: 100vh"></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown mb-0">Misi Kami</h2>
-                <p class="animate__animated animate__fadeInUp">Memberikan kualitas pelayanan #1 di dunia</p>
-                <a href="category.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Mulai Belanja</a>
+                <h2 class="animate__animated animate__fadeInDown mb-0">Visi Kami</h2>
+                <p class="animate__animated animate__fadeInUp">Menjadi perusahaan manufaktur yang selalu mengutamakan kepuasan pelanggan melalui tiga (3) pillar "Quality, Cost, Delivery."</p>
+                <a href="about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Tentang Kami</a>
               </div>
             </div>
           </div>
@@ -66,43 +66,6 @@
       </div>
     </div>
   </section>
-  <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
-      <div class="container">
-        <div class="row">
-          <div class="display-header d-flex justify-content-between pb-3">
-            <h2 class="display-7 text-dark text-uppercase">Mesin-Mesin Yang Digunakan</h2>
-          </div>
-          <div class="swiper product-swiper">
-            <div class="swiper-wrapper">
-              <!-- Pemisah -->
-              @foreach($mesin as $mesin)
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="{{ asset('storage/'.$mesin->gambar) }}" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="{{ route('detail.produk', ['id' => $mesin->id]) }}" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">{{ $mesin->part_name }}</a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              @endforeach 
-            </div>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="swiper-pagination position-absolute text-center"></div>
-        </div>
-      </div>
-    </section>
-
     <section id="smart-watches" class="product-store padding-large position-relative">
       <div class="container">
         <div class="row">
@@ -123,7 +86,7 @@
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
-                      <a href="{{ route('detail.produk', ['id' => $produk->id]) }}" class="btn btn-medium btn-black">Lihat Produk<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
+                      <a href="{{ route('detail.produk', ['id' => $produk->id]) }}" class="btn btn-medium btn-black">Lihat Produk</a>
                     </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
@@ -142,7 +105,37 @@
         </div>
       </div>
     </section>
-
+    <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
+      <div class="container">
+        <div class="row">
+          <div class="display-header d-flex justify-content-between pb-3">
+            <h2 class="display-7 text-dark text-uppercase">Mesin-Mesin Yang Digunakan</h2>
+          </div>
+          <div class="swiper product-swiper">
+            <div class="swiper-wrapper">
+              <!-- Pemisah -->
+              @foreach($mesin as $mesin)
+              <div class="swiper-slide">
+                <div class="product-card position-relative">
+                  <div class="image-holder">
+                    <img src="{{ asset('storage/'.$mesin->gambar) }}" alt="product-item" class="img-fluid">
+                  </div>
+                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                    <h3 class="card-title text-uppercase">
+                      <a href="#">{{ $mesin->part_name }}</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              @endforeach 
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="swiper-pagination position-absolute text-center"></div>
+        </div>
+      </div>
+    </section>
     <!-- <div class="container-fluid paboutus">
         <div class="aboutuscard">
             <div class="col aboutuscontent">

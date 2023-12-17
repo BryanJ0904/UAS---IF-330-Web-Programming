@@ -6,7 +6,7 @@
     <title>Produk</title>
     <link rel="stylesheet" href="{{ asset('produk.css') }}" />
 </head>
-<body>
+<body class="body">
     @include('tampilan.main')
     <div class="pproduk">
         @foreach($produk as $produk)
